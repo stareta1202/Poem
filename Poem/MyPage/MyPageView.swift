@@ -15,17 +15,30 @@ struct MyPageView: View {
             NavigationView  {
                 List($core.models, id: \.hashValue) { model in
                     
-                    NavigationLink(<#T##title: StringProtocol##StringProtocol#>, destination: <#T##() -> _#>)
-                    MyPageViewCell(image: model.image, title: model.title, selected: model.selected)
-                        .onTapGesture {
-    //                        switch model.type.wrappedValue {
-    //                        case .myPost:
-    //                        case .myLike:
-    //                        case .auth:
-    //                        }
+                    if self.core.loggedIn {
+                        switch model.type.wrappedValue {
+                        case .logOut:
+                            Button {
+                                core.logOut()
+                            } label: {
+                                Text("로그아웃")
+                            }
+
+                        default:
+                            NavigationLink {
+                            } label: {
+                                MyPageViewCell(image: model.image, title: model.title, selected: model.selected)
+                            }
                         }
+
+                    } else {
+                        if model.type.wrappedValue == .logIn {
+                            MyPageAuthCell(image: model.image, title: model.title, selected: model.selected, isLoggedIn: $core.loggedIn, notLoggedIn: $core.NotLoggedIn)
+                        } else {
+                            MyPageViewCell(image: model.image, title: model.title, selected: model.selected)
+                        }
+                    }
                 }
-                
             }
 
         }
@@ -44,5 +57,30 @@ struct MyPageViewCell: View {
             Spacer()
             Text("\(title)")
         }
+    }
+}
+
+struct MyPageAuthCell: View {
+    @Binding var image: Image
+    @Binding var title: String
+    @Binding var selected: Bool
+    @Binding var isLoggedIn: Bool
+    @Binding var notLoggedIn: Bool
+    @State var showModal: Bool = false
+    
+    var body: some View  {
+        Button {
+            self.showModal = !showModal
+        } label: {
+            HStack {
+                image
+                Spacer()
+                Text("\(title)")
+            }
+        }
+        .sheet(isPresented: $showModal) {
+            LoginView(presentable: $showModal)
+        }
+
     }
 }

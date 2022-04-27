@@ -15,7 +15,6 @@ class AddService {
     static let shared = AddService()
     private var db: Firestore
 
-    
     init() {
         db = Firestore.firestore()
     }
