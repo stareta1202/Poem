@@ -20,6 +20,7 @@ class MyPageCore: ObservableObject {
             MyPageModel(.myPost)
         ]
         AuthService.shared.user$
+            .removeDuplicates()
             .sink { [unowned self] user in
                 if user != nil {
                     self.models.insert(MyPageModel(.myInfo), at: 0)

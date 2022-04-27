@@ -101,7 +101,9 @@ class LoginCore: ObservableObject {
         AuthService.shared.user$.assign(to: &self.$user)
         AuthService.shared.user$.map { user in
             return user != nil ? false : true
-        }.assign(to: &self.$notLoggedIn)
+        }
+        .dropFirst()
+        .assign(to: &self.$notLoggedIn)
         
         self.$email
             .map { [unowned self] email in
