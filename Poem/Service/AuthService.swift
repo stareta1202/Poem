@@ -45,14 +45,14 @@ class AuthService {
         }
     }
     
-    func signUp(_ email: String, _ password: String, _ completionBlock: @escaping (_ success: Bool) -> Void) {
+    func signUp(_ email: String, _ password: String, _ completionBlock: @escaping (_ success: Bool, _ result: AuthDataResult?) -> Void) {
         return auth.createUser(withEmail: email, password: password) { result, error in
             if let user = result?.user {
                 print(4040404,user)
-                completionBlock(true)
+                completionBlock(true, result)
             } else {
                 print(5050505, "error \(error)")
-                completionBlock(false)
+                completionBlock(false, nil)
             }
         }
     }

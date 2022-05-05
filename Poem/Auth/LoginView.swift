@@ -65,7 +65,7 @@ struct LoginView: View {
                     core.notLoggedIn = true
                 }
                 .sheet(isPresented: $core.notLoggedIn) {
-                    SignUpEmailPasswordView(notSignedUp: $core.notLoggedIn)
+                    SignUpEmailPasswordView(notSignedUp: $core.notLoggedIn, loginViewDismissAble: $presentable)
                 }
             }
             

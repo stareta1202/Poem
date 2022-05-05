@@ -11,7 +11,7 @@
 		1504349C2817060000380F71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1504349B2817060000380F71 /* GoogleService-Info.plist */; };
 		1504349F28170B5B00380F71 /* MainCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504349E28170B5B00380F71 /* MainCore.swift */; };
 		150434A228170C2600380F71 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434A128170C2600380F71 /* AddView.swift */; };
-		150434A428170D9500380F71 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434A328170D9500380F71 /* User.swift */; };
+		150434A428170D9500380F71 /* PoemUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434A328170D9500380F71 /* PoemUser.swift */; };
 		150434A72817203900380F71 /* AddService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434A62817203900380F71 /* AddService.swift */; };
 		150434AA28172C2D00380F71 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434A928172C2D00380F71 /* LoginView.swift */; };
 		150434AC28172C3A00380F71 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434AB28172C3A00380F71 /* SignUpView.swift */; };
@@ -20,6 +20,12 @@
 		150434B3281847A900380F71 /* MyPageCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434B2281847A900380F71 /* MyPageCore.swift */; };
 		150434B5281959CE00380F71 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434B4281959CE00380F71 /* AuthService.swift */; };
 		150434B828195E8100380F71 /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434B728195E8100380F71 /* ErrorFactory.swift */; };
+		15043535281B081C00380F71 /* UserAddService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15043534281B081B00380F71 /* UserAddService.swift */; };
+		15043539281BCF5000380F71 /* SignUpCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15043538281BCF5000380F71 /* SignUpCore.swift */; };
+		150435432822D56700380F71 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150435422822D56500380F71 /* Tab.swift */; };
+		150435452822D70600380F71 /* AllPoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150435442822D70600380F71 /* AllPoemView.swift */; };
+		15043547282389E800380F71 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15043546282389E700380F71 /* ISO8601DateFormatter.swift */; };
+		1504354928238E7C00380F71 /* TimeStampType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504354828238E7C00380F71 /* TimeStampType.swift */; };
 		15A844DA281160E000AC5729 /* PoemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A844D9281160E000AC5729 /* PoemApp.swift */; };
 		15A844DC281160E000AC5729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A844DB281160E000AC5729 /* ContentView.swift */; };
 		15A844DE281160E400AC5729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A844DD281160E400AC5729 /* Assets.xcassets */; };
@@ -55,7 +61,7 @@
 		1504349B2817060000380F71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1504349E28170B5B00380F71 /* MainCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCore.swift; sourceTree = "<group>"; };
 		150434A128170C2600380F71 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		150434A328170D9500380F71 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		150434A328170D9500380F71 /* PoemUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemUser.swift; sourceTree = "<group>"; };
 		150434A62817203900380F71 /* AddService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddService.swift; sourceTree = "<group>"; };
 		150434A928172C2D00380F71 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		150434AB28172C3A00380F71 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,13 @@
 		150434B2281847A900380F71 /* MyPageCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCore.swift; sourceTree = "<group>"; };
 		150434B4281959CE00380F71 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		150434B728195E8100380F71 /* ErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFactory.swift; sourceTree = "<group>"; };
+		15043534281B081B00380F71 /* UserAddService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddService.swift; sourceTree = "<group>"; };
+		15043536281B15AD00380F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		15043538281BCF5000380F71 /* SignUpCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCore.swift; sourceTree = "<group>"; };
+		150435422822D56500380F71 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		150435442822D70600380F71 /* AllPoemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPoemView.swift; sourceTree = "<group>"; };
+		15043546282389E700380F71 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		1504354828238E7C00380F71 /* TimeStampType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampType.swift; sourceTree = "<group>"; };
 		15A844D6281160E000AC5729 /* Poem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A844D9281160E000AC5729 /* PoemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemApp.swift; sourceTree = "<group>"; };
 		15A844DB281160E000AC5729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				150434992816DBF100380F71 /* PoemModel.swift */,
-				150434A328170D9500380F71 /* User.swift */,
+				150434A328170D9500380F71 /* PoemUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +141,7 @@
 			children = (
 				15A845032811611E00AC5729 /* MainView.swift */,
 				1504349E28170B5B00380F71 /* MainCore.swift */,
+				150435442822D70600380F71 /* AllPoemView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -145,6 +159,7 @@
 			children = (
 				150434A62817203900380F71 /* AddService.swift */,
 				150434B4281959CE00380F71 /* AuthService.swift */,
+				15043534281B081B00380F71 /* UserAddService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -152,8 +167,8 @@
 		150434A828172C2600380F71 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				15043537281BCF4400380F71 /* SignUp */,
 				150434A928172C2D00380F71 /* LoginView.swift */,
-				150434AB28172C3A00380F71 /* SignUpView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -171,8 +186,20 @@
 			isa = PBXGroup;
 			children = (
 				150434B728195E8100380F71 /* ErrorFactory.swift */,
+				150435422822D56500380F71 /* Tab.swift */,
+				15043546282389E700380F71 /* ISO8601DateFormatter.swift */,
+				1504354828238E7C00380F71 /* TimeStampType.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		15043537281BCF4400380F71 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				150434AB28172C3A00380F71 /* SignUpView.swift */,
+				15043538281BCF5000380F71 /* SignUpCore.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		15A844CD281160E000AC5729 = {
@@ -200,6 +227,7 @@
 		15A844D8281160E000AC5729 /* Poem */ = {
 			isa = PBXGroup;
 			children = (
+				15043536281B15AD00380F71 /* Info.plist */,
 				150434B628195E7400380F71 /* Util */,
 				150434AD281825BF00380F71 /* MyPage */,
 				150434A828172C2600380F71 /* Auth */,
@@ -505,19 +533,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1504349A2816DBF100380F71 /* PoemModel.swift in Sources */,
+				15043547282389E800380F71 /* ISO8601DateFormatter.swift in Sources */,
+				1504354928238E7C00380F71 /* TimeStampType.swift in Sources */,
 				15A844DC281160E000AC5729 /* ContentView.swift in Sources */,
 				150434B828195E8100380F71 /* ErrorFactory.swift in Sources */,
 				150434A228170C2600380F71 /* AddView.swift in Sources */,
 				150434AA28172C2D00380F71 /* LoginView.swift in Sources */,
+				15043539281BCF5000380F71 /* SignUpCore.swift in Sources */,
 				1504349F28170B5B00380F71 /* MainCore.swift in Sources */,
 				15A845042811611E00AC5729 /* MainView.swift in Sources */,
 				150434B12818263600380F71 /* AppCore.swift in Sources */,
+				15043535281B081C00380F71 /* UserAddService.swift in Sources */,
+				150435452822D70600380F71 /* AllPoemView.swift in Sources */,
 				150434AF281825CB00380F71 /* MyPageView.swift in Sources */,
 				150434AC28172C3A00380F71 /* SignUpView.swift in Sources */,
 				150434A72817203900380F71 /* AddService.swift in Sources */,
 				150434B3281847A900380F71 /* MyPageCore.swift in Sources */,
 				15A844DA281160E000AC5729 /* PoemApp.swift in Sources */,
-				150434A428170D9500380F71 /* User.swift in Sources */,
+				150435432822D56700380F71 /* Tab.swift in Sources */,
+				150434A428170D9500380F71 /* PoemUser.swift in Sources */,
 				150434B5281959CE00380F71 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +715,7 @@
 				DEVELOPMENT_TEAM = VZTRDYYN8R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Poem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -711,6 +746,7 @@
 				DEVELOPMENT_TEAM = VZTRDYYN8R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Poem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

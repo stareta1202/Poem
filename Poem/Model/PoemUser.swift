@@ -7,17 +7,19 @@
 
 import Foundation
 
-class UserData: Codable {
+class PoemUser: Codable {
     var uuid: String
     var email: String
     var password: String
+    var username: String?
+    var phoneNumber: String?
     
     init(
-        _ uuid: String,
-        _ email: String,
-        _ password: String
+        uuid: String,
+        email: String,
+        password: String
     ) {
-        self.email = uuid
+        self.email = email
         self.uuid = uuid
         self.password = password
     }

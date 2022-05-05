@@ -43,8 +43,21 @@ struct AddView: View {
                 }
                 
             }
+            .onTapGesture { }
+            .onLongPressGesture(minimumDuration: 0, maximumDistance: 0, perform: { }, onPressingChanged: { isPress in
+                if isPress { self.endEditing()}
+            })
             .toolbar {
-                ToolbarItem {
+                
+                ToolbarItemGroup(placement: .bottomBar) {
+                    Button {
+                        self.presentable.toggle()
+                        
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    Spacer()
+                    
                     Button {
                         core.add()
                         self.presentable.toggle()
@@ -52,7 +65,14 @@ struct AddView: View {
                     } label: {
                         Image(systemName: "plus")
                     }
-
+                    Spacer()
+                    
+                    Button {
+                        self.presentable.toggle()
+                        
+                    } label: {
+                        Image(systemName: "folder")
+                    }
                 }
             }
         }
@@ -67,8 +87,12 @@ class AddCore: ObservableObject {
     }
     
     func add() {
-//        print("❤️ \(poem.title)")
         addSerivce.addPoem(poem)
     }
 }
 
+extension View {
+    func endEditing() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
